@@ -2,8 +2,10 @@
   flake.homeModules.git = { pkgs, lib, ... }: {
     programs.git = {
       enable = true;
-      userName = "Ferret";
-      userEmail = "73801176+ferretirl@users.noreply.github.com";
+      settings = {
+          user.name = "Ferret";
+          user.email = "73801176+ferretirl@users.noreply.github.com";
+        };
     };
   };
 }
