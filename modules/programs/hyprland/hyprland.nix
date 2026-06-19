@@ -1,4 +1,4 @@
-{ self, inputs, config, ... }: {
+{ self, inputs, config, lib, ... }: {
     flake.homeModules.hyprland = { pkgs, lib, ... }: {
         wayland.windowManager.hyprland = {
             enable = true;
