@@ -9,7 +9,18 @@
         home.username = "ferret";
         home.homeDirectory = "/home/ferret";
         home.stateVersion = "26.11";
-        imports = builtins.attrValues self.homeModules;
+        imports = [
+        self.homeModules.kitty
+        self.homeModules.hyprland
+        self.homeModules.btop
+        self.homeModules.fish
+        self.homeModules.git
+        self.homeModules.rmpc
+        self.homeModules.starship
+        self.homeModules.fastfetch
+        self.homeModules.mpd
+        self.homeModules.mpd-discord-rpc
+        ];
         home.packages = with pkgs; [
             neovim
             ncdu
