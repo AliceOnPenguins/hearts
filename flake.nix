@@ -25,10 +25,6 @@
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake
-
-    imports = [
-      inputs.home-manager.flakeModules.home-manager
-    ];
     {inherit inputs;}
     (inputs.import-tree ./modules);
 }
