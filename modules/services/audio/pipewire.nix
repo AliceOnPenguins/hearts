@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-    flake.homeModules.pipewire = { pkgs, lib, ... }: {
+    flake.nixosModules.pipewire = { pkgs, lib, ... }: {
         services.pipewire = {
           enable = true;
           pulse.enable = true;
