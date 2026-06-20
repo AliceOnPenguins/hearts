@@ -32,10 +32,6 @@
        
          networking.networkmanager.enable = true;
        
-         services.printing.enable = true;
-       
-         services.gnome.gnome-keyring.enable = true;
-       
          time.timeZone = "Europe/Prague";
          i18n.defaultLocale = "en_US.UTF-8";
        
