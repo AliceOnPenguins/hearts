@@ -28,7 +28,6 @@
         self.nixosModules.systemPackages
         self.nixosModules.consoleSetup
         self.nixosModules.fontSetup
-
         ];
         specialArgs = { inherit inputs; };
       };

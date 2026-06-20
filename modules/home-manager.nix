@@ -28,6 +28,7 @@
             bitwarden-desktop
             inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
             inputs.helium.packages.${system}.default
+            filezilla
             ];
       };
 
