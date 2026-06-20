@@ -17,6 +17,17 @@
 
         self.nixosModules.mustelidConfiguration
         self.nixosModules.home-manager
+        self.nixosModules.gnome-keyring
+        self.nixosModules.cups-printing
+        self.nixosModules.pipewire
+        self.nixosModules.networking
+        self.nixosModules.time-locale
+        self.nixosModules.bootloader
+        self.nixosModules.usersFerret
+        self.nixosModules.systemPackages
+        self.nixosModules.consoleSetup
+        self.nixosModules.fontSetup
+
         ];
         specialArgs = { inherit inputs; };
       };

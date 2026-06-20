@@ -1,5 +1,5 @@
 { self, inputs, ... }:{
-    flake.nixosModules.networkmanager = { pkgs, lib, ... }: {
+    flake.nixosModules.networking = { pkgs, lib, ... }: {
         networking = {
           hostName = "mustelid";
           networkmanager = {
