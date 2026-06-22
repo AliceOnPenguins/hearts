@@ -29,6 +29,7 @@
         self.nixosModules.consoleSetup
         self.nixosModules.fontSetup
         self.nixosModules.flatpak
+        self.nixosModules.locateService
         ];
         specialArgs = { inherit inputs; };
       };
