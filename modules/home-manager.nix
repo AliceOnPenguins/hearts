@@ -13,6 +13,8 @@
         home.packages = with pkgs; [
             neovim
             mlocate
+            oculante
+            mpv
             adw-gtk3
             papirus-icon-theme
             nwg-look
