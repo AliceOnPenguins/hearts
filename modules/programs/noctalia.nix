@@ -74,6 +74,13 @@
                 weather = {
                     address = "Uhersky Brod, Czech Republic"; # i dont actually live here
                   };
+                widget = {
+                    workspace = {
+                        empty_color = "tertiary";
+                        minimal = true;
+                        occupied_color = "tertiary";
+                      };
+                  };
               };
           };
       };
