@@ -69,7 +69,7 @@
                     panel = {
                         launcher_categories = false;
                         launcher_placement = "centered";
-                        launcher_compact = true;
+                        launcher_compact = false;
                         launcher_sort_by_usage = false;
                         launcher_show_icons = true;
                       };
@@ -78,7 +78,7 @@
                     address = "Uhersky Brod, Czech Republic"; # i dont actually live here
                   };
                 widget = {
-                    workspace = {
+                    workspaces = {
                         empty_color = "tertiary";
                         minimal = true;
                         occupied_color = "tertiary";
