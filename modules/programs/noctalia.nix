@@ -68,7 +68,10 @@
                     ui_scale = 1.5;
                     panel = {
                         launcher_categories = false;
-                        launcher_placement = "attached";
+                        launcher_placement = "centered";
+                        launcher_compact = true;
+                        launcher_sort_by_usage = false;
+                        launcher_show_icons = true;
                       };
                   };
                 weather = {
