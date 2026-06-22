@@ -126,8 +126,9 @@ hl.window_rule({
 
 hl.window_rule({
 	name = "filepickeryazi",
-	match = { title = "file chooser", class = "kitty" },
+	match = { class = "file_chooser" },
 	center = true,
+  focus_on_activate = true,
 	float = true,
 	size = { "monitor_w * 0.6", "monitor_h * 0.6" },
 })

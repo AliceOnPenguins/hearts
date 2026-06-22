@@ -14,6 +14,7 @@
           git
           wget
           mlocate
+          xdg-desktop-portal-termfilechooser
           gcc
           wl-clipboard
           fzf
