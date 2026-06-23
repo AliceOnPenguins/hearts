@@ -12,6 +12,8 @@
 
         environment.systemPackages = with pkgs; [
           git
+          rocmPackages.rocm-smi
+          ffmpeg
           wget
           mlocate
           xdg-desktop-portal-termfilechooser
