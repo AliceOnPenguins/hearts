@@ -14,6 +14,7 @@
             neovim
             oculante
             lxqt.pavucontrol-qt
+            gimp
             mpv
             adw-gtk3
             papirus-icon-theme
