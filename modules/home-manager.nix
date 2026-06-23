@@ -14,6 +14,7 @@
             neovim
             oculante
             lxqt.pavucontrol-qt
+            obs-studio
             gimp
             mpv
             adw-gtk3
