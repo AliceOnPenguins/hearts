@@ -21,7 +21,6 @@
           "zen.welcome-screen.seen" = true;
           "zen.urlbar.behavior" = "float";
           "zen.window-sync.enabled" = false;
-          "zen.window-sync.prefer-unsynced-windows" = true;
           "zen.view.use-single-toolbar" = true;
         };
   
@@ -42,6 +41,7 @@
             "f7c71d9a-bce2-420f-ae44-a64bd92975ab" # Better Unloaded Tabs
             "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e" # Quietify
             "context-menu-icons"
+            "Neo-Zen"
           ];
         };
   
@@ -51,12 +51,12 @@
   
         keyboardShortcutsVersion = 19;
         keyboardShortcuts = [
-          {
-            id = "zen-compact-mode-toggle";
-            key = "c";
-            modifiers.control = true;
-            modifiers.alt = true;
-          }
+          # {
+          #   id = "zen-compact-mode-toggle";
+          #   key = "c";
+          #   modifiers.control = true;
+          #   modifiers.alt = true;
+          # }
           {
             id = "zen-toggle-sidebar";
             key = "x";
@@ -96,5 +96,5 @@
         ];
       };
     };
-   };
+  };
 }
