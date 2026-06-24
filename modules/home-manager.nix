@@ -32,7 +32,7 @@
             slurp
             faugus-launcher
             bitwarden-desktop
-            inputs.helium.packages.${system}.default
+            # inputs.helium.packages.${system}.default
             filezilla
             proton-vpn
             ];

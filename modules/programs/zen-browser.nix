@@ -1,0 +1,288 @@
+{ self, inputs, ... }: {
+    flake.homeModules.zen-browser = { pkgs, lib, ... }: {
+        imports = [
+        inputs.zen-browser.homeModules.twilight
+        ];
+        
+    programs.zen-browser = {
+      enable = true;
+      languagePacks = ["en-US"];
+      policies = import ../../config/policies-config.nix;
+  
+      setAsDefaultBrowser = true;
+      enablePrivateDesktopEntry = true;
+  
+      profiles.default = rec {
+        settings = {
+          "zen.workspaces.continue-where-left-off" = true;
+          "zen.workspaces.natural-scroll" = true;
+          "zen.view.compact.hide-tabbar" = true;
+          "zen.view.compact.hide-toolbar" = true;
+          "zen.view.compact.animate-sidebar" = false;
+          "zen.welcome-screen.seen" = true;
+          "zen.urlbar.behavior" = "float";
+        };
+  
+        sine = {
+          enable = true;
+          mods = [
+            "253a3a74-0cc4-47b7-8b82-996a64f030d5" # Floating History
+            "4ab93b88-151c-451b-a1b7-a1e0e28fa7f8" # No Sidebar Scrollbar
+            "7190e4e9-bead-4b40-8f57-95d852ddc941" # Tab title fixes
+            "803c7895-b39b-458e-84f8-a521f4d7a064" # Hide Inactive Workspaces
+            "906c6915-5677-48ff-9bfc-096a02a72379" # Floating Status Bar
+            "a6335949-4465-4b71-926c-4a52d34bc9c0" # Better Find Bar
+            "c6813222-6571-4ba6-8faf-58f3343324f6" # Disable Rounded Corners
+            "c8d9e6e6-e702-4e15-8972-3596e57cf398" # Zen Back Forward
+            "cb15abdb-0514-4e09-8ce5-722cf1f4a20f" # Hide Extension Name
+            "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe" # Better Active Tab
+            "e122b5d9-d385-4bf8-9971-e137809097d0" # No Top Sites
+            "f7c71d9a-bce2-420f-ae44-a64bd92975ab" # Better Unloaded Tabs
+            "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e" # Quietify
+            "context-menu-icons"
+          ];
+        };
+  
+  
+        search = import ../../config/search-config.nix { inherit pkgs; };
+  
+        pinsForce = true;
+        pinsForceAction = "demote";
+        pins = let
+          stateDir = {
+            "State" = {
+              id = "482bc905-c00c-4c49-8a56-367668bf70b9";
+              workspace = spaces."Rendezvous".id;
+              folderIcon = "chrome://browser/skin/zen-icons/selectable/eye.svg";
+              isGroup = true;
+              isFolderCollapsed = true;
+              editedTitle = true;
+              position = 200;
+            };
+            "Cursor" = {
+              id = "384413fa-89aa-408c-b7bb-260e49dea3d3";
+              url = "https://cursor.com/dashboard/spending";
+              workspace = spaces."Rendezvous".id;
+              folderParentId = pins."State".id;
+              position = 201;
+              editedTitle = true;
+              title = "Cursor Usage";
+            };
+            "Codex" = {
+              id = "0dc25f8f-a801-46ed-853b-6d866622bc18";
+              url = "https://chatgpt.com/codex/cloud/settings/analytics#usage";
+              workspace = spaces."Rendezvous".id;
+              folderParentId = pins."State".id;
+              position = 201;
+              editedTitle = true;
+              title = "Codex Usage";
+            };
+            "Claude" = {
+              id = "b9852a90-794e-4692-989b-bd2fb376bc54";
+              url = "https://platform.claude.com/usage";
+              workspace = spaces."Rendezvous".id;
+              folderParentId = pins."State".id;
+              position = 201;
+              editedTitle = true;
+              title = "Claude Usage";
+            };
+            "Tailscale" = {
+              id = "4398f631-714c-450f-9b10-eb69ab27244a";
+              url = "https://login.tailscale.com/admin/machines";
+              workspace = spaces."Rendezvous".id;
+              folderParentId = pins."State".id;
+              position = 153;
+            };
+          };
+        in
+          {
+            "GitHub" = {
+              id = "48e8a119-5a14-4826-9545-91c8e8dd3bf6";
+              workspace = spaces."Rendezvous".id;
+              url = "https://github.com";
+              position = 101;
+              isEssential = false;
+            };
+            "WhatsApp Web" = {
+              id = "1eabb6a3-911b-4fa9-9eaf-232a3703db19";
+              workspace = spaces."Rendezvous".id;
+              url = "https://web.whatsapp.com/";
+              position = 102;
+              isEssential = false;
+            };
+            "Telegram Web" = {
+              id = "5065293b-1c04-40ee-ba1d-99a231873864";
+              url = "https://web.telegram.org/k/";
+              position = 103;
+              isEssential = true;
+            };
+            "PairDrop" = {
+              id = "c70a0cd7-6ee8-470f-85c6-85a73a7a6196";
+              url = "https://pairdrop.net/";
+              position = 104;
+              isEssential = true;
+            };
+            "Linux kernel" = {
+              id = "9d67cbc8-dd87-4c57-a274-9dab12a94429";
+              url = "https://www.kernel.org/";
+              workspace = spaces."Rendezvous".id;
+              position = 150;
+            };
+            "NixOS.org" = {
+              id = "d8494475-ed8d-4746-a867-54fa7700faf4";
+              url = "https://nixos.org/";
+              workspace = spaces."Rendezvous".id;
+              position = 151;
+            };
+            "GrapheneOS" = {
+              id = "19266f40-575f-49f8-8fe0-ac13659a4242";
+              url = "https://grapheneos.org/";
+              workspace = spaces."Rendezvous".id;
+              position = 152;
+            };
+          }
+          // stateDir;
+  
+        joinedTabs."Inside state" = {
+          id = "inside-state";
+          gridType = "vsep";
+          tabs = [
+            pins."Cursor".id
+            pins."Codex".id
+            pins."Claude".id
+          ];
+        };
+  
+        joinedTabs."Kernel and NixOS" = {
+          id = "kernel-nix-docs";
+          gridType = "vsep";
+          tabs = [
+            pins."Linux kernel".id
+            pins."NixOS.org".id
+            pins."GrapheneOS".id
+          ];
+          sizes = [40 20 40];
+        };
+  
+        containersForce = true;
+  
+        spacesForce = true;
+        spaces = {
+          "Rendezvous" = {
+            id = "572910e1-4468-4832-a869-0b3a93e2f165";
+            icon = "chrome://browser/skin/zen-icons/selectable/navigate.svg";
+            position = 1000;
+            theme = {
+              type = "gradient";
+              colors = [
+                {
+                  red = 123;
+                  green = 56;
+                  blue = 58;
+                  algorithm = "analogous";
+                  type = "explicit-lightness";
+                  lightness = 35;
+                  position.x = 301;
+                  position.y = 176;
+                  primary = true;
+                  custom = false;
+                }
+                {
+                  red = 123;
+                  green = 110;
+                  blue = 55;
+                  algorithm = "analogous";
+                  type = "explicit-lightness";
+                  lightness = 35;
+                  position.x = 260;
+                  position.y = 271;
+                  primary = false;
+                  custom = false;
+                }
+                {
+                  red = 122;
+                  green = 56;
+                  blue = 114;
+                  algorithm = "analogous";
+                  type = "explicit-lightness";
+                  lightness = 35;
+                  position.x = 255;
+                  position.y = 84;
+                  primary = false;
+                  custom = false;
+                }
+              ];
+              opacity = 0.8;
+              texture = 0.5;
+            };
+          };
+          "Research" = {
+            id = "ec287d7f-d910-4860-b400-513f269dee77";
+            icon = "chrome://browser/skin/zen-icons/selectable/logo-rss.svg";
+            position = 1001;
+            theme = {
+              type = "gradient";
+              colors = [
+                {
+                  red = 171;
+                  green = 219;
+                  blue = 227;
+                  algorithm = "floating";
+                  type = "explicit-lightness";
+                }
+              ];
+              opacity = 0.2;
+              texture = 0.5;
+            };
+          };
+        };
+  
+        keyboardShortcutsVersion = 19;
+        keyboardShortcuts = [
+          {
+            id = "zen-compact-mode-toggle";
+            key = "c";
+            modifiers.control = true;
+            modifiers.alt = true;
+          }
+          {
+            id = "zen-toggle-sidebar";
+            key = "x";
+            modifiers.control = true;
+            modifiers.alt = true;
+          }
+          {
+            id = "key_savePage";
+            key = "s";
+            modifiers.control = true;
+          }
+          {
+            id = "key_quitApplication";
+            disabled = true;
+          }
+          {
+            id = "zen-copy-url";
+            disabled = true;
+          }
+          {
+            id = "addBookmarkAsKb";
+            disabled = true;
+          }
+          {
+            id = "key_reload";
+            key = "r";
+            modifiers.control = true;
+          }
+          {
+            id = "key_reload_skip_cache";
+            key = "r";
+            modifiers = {
+              control = true;
+              shift = true;
+            };
+          }
+        ];
+      };
+    };
+   };
+}
