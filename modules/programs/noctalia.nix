@@ -4,6 +4,7 @@
         programs.noctalia = {
             enable = true;
             settings = {
+
                 theme = {
                     mode = "dark";
                     source = "builtin";
@@ -13,10 +14,13 @@
                         community_ids = [ "yazi" "discord" ];
                       };
                   };
+
                 wallpaper = {
                     enabled = true;
                     default.path = "\~/mustelid/wallpapers/__arlenbell_and_eillon_rinto_original_drawn_by_tuweibu__45fd21257b571c18e1dafafacbd41c4a.jpg";
+                    directory = "\~/mustelid/wallpapers/";
                   };
+
                 bar = {
                     order = [ "uwu" ];
                     uwu = {
@@ -36,25 +40,30 @@
                         widget_spacing = 10;
                       };
                   };
+
                 desktop_widgets = {
                     enabled = false;
                   };
+
                 keybinds = {
                     left = [ "Ctrl+h" ];
                     down = [ "Ctrl+j" ];
                     up = [ "Ctrl+k" ];
                     right = [ "Ctrl+l" ];
                   };
+
                 notification = {
                     background_opacity = 0.79;
                     offset_x = 10.0;
                     offset_y = 10.0;
                     scale = 0.75;
                   };
+
                 osd = {
                     background_opacity = 0.79;
                     scale = 0.75;
                   };
+
                 shell = {
                     clipboard_auto_paste = "off";
                     clipboard_history_max_entries = 100;
@@ -74,9 +83,15 @@
                         launcher_show_icons = true;
                       };
                   };
+
                 weather = {
+                    enable = true;
+                  };
+
+                location = {
                     address = "Uhersky Brod, Czech Republic"; # i dont actually live here
                   };
+
                 widget = {
                     workspaces = {
                         empty_color = "tertiary";
