@@ -1,7 +1,7 @@
 { self, inputs, ... }: {
-    flake.nixosModules.mustelidConfiguration = { pkgs, lib, ... }: {
+    flake.nixosModules.heartsConfiguration = { pkgs, lib, ... }: {
         imports = [
-        self.nixosModules.mustelidHardware
+        self.nixosModules.heartsHardware
         ];
 
          nix.settings = {

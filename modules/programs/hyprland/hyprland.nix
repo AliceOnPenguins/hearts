@@ -6,6 +6,6 @@
             portalPackage = null;
             systemd.enable = false;
           };
-        xdg.configFile."hypr".source = config.lib.file.mkOutOfStoreSymlink "/home/alice/mustelid/modules/programs/hyprland/hypr";
+        xdg.configFile."hypr".source = config.lib.file.mkOutOfStoreSymlink "/home/alice/hearts/modules/programs/hyprland/hypr";
       };
   }

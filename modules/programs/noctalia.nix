@@ -17,8 +17,8 @@
 
                 wallpaper = {
                     enabled = true;
-                    default.path = "\~/mustelid/wallpapers/__arlenbell_and_eillon_rinto_original_drawn_by_tuweibu__45fd21257b571c18e1dafafacbd41c4a.jpg";
-                    directory = "\~/mustelid/wallpapers/";
+                    default.path = "\~/hearts/wallpapers/__arlenbell_and_eillon_rinto_original_drawn_by_tuweibu__45fd21257b571c18e1dafafacbd41c4a.jpg";
+                    directory = "\~/hearts/wallpapers/";
                   };
 
                 bar = {

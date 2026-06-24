@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-    flake.nixosConfigurations.mustelid = inputs.nixpkgs.lib.nixosSystem {
+    flake.nixosConfigurations.hearts = inputs.nixpkgs.lib.nixosSystem {
         modules = [
 
         ({ ... }: {
@@ -15,7 +15,7 @@
           boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-bore-x86_64-v3;
         })
 
-        self.nixosModules.mustelidConfiguration
+        self.nixosModules.heartsConfiguration
         self.nixosModules.home-manager
         self.nixosModules.gnome-keyring
         self.nixosModules.defaultShell

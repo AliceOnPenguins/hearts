@@ -1,5 +1,5 @@
 { self, inputs, lib, ... }: {
-    flake.nixosModules.mustelidHardware = { pkgs, lib, config, modulesPath, ... }: {
+    flake.nixosModules.heartsHardware = { pkgs, lib, config, modulesPath, ... }: {
 
       imports =
         [ (modulesPath + "/installer/scan/not-detected.nix")

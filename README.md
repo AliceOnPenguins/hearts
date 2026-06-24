@@ -1,4 +1,4 @@
-# Mustelid
+# Hearts <3 
 my nixos dots. dendritic flakeparts structure with home manager.
 
 ## system
