@@ -48,6 +48,7 @@ end
 -- Focus on activate app list
 local focusClasses = {
 	"org.gnome.Nautilus",
+  "zen.*",
 	"helium.*",
 	"brave-origin-.*",
 	"dev.noctalia.Noctalia.Settings",
