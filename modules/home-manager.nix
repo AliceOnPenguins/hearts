@@ -13,6 +13,7 @@
         home.packages = with pkgs; [
             neovim
             rembg
+            _7zz
             oculante
             lxqt.pavucontrol-qt
             obs-studio
