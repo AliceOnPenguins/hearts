@@ -94,9 +94,10 @@
 
                 widget = {
                     workspaces = {
-                        empty_color = "tertiary";
+                        focused_color = "secondary";
+                        empty_color = "outline";
                         minimal = true;
-                        occupied_color = "tertiary";
+                        occupied_color = "outline";
                       };
                   };
               };
