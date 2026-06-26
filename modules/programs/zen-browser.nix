@@ -21,7 +21,6 @@
           "zen.welcome-screen.seen" = true;
           "zen.urlbar.behavior" = "float";
           "zen.window-sync.enabled" = false;
-          "zen.view.use-single-toolbar" = true;
         };
   
         sine = {
