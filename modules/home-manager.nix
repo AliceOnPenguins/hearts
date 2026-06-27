@@ -12,7 +12,7 @@
         imports = builtins.attrValues self.homeModules;
         home.packages = with pkgs; [
             neovim
-            rembg
+            # rembg
             _7zz
             oculante
             lxqt.pavucontrol-qt
