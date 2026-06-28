@@ -65,7 +65,7 @@ hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- Apps
 hl.bind("SUPER + T", hl.dsp.exec_cmd("kitty -1"), { repeating = true })
 hl.bind("SUPER + E", hl.dsp.exec_cmd("kitty -1 yazi"), { repeating = true })
-hl.bind("SUPER + W", hl.dsp.exec_cmd("zen-twilight"), { repeating = true })
+hl.bind("SUPER + W", hl.dsp.exec_cmd("firefox"), { repeating = true })
 hl.bind("SUPER + C", hl.dsp.exec_cmd("kitty -1 nvim"), { repeating = true })
 hl.bind("CTRL + SUPER + V", hl.dsp.exec_cmd("pavucontrol-qt"), { repeating = true })
 hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("kitty -1 btop"), { repeating = true })

@@ -4,11 +4,11 @@
               enable = true;
               defaultApplications = {
                 # Browser
-                "x-scheme-handler/http" = "zen-twilight.desktop";
-                "x-scheme-handler/https" = "zen-twilight.desktop";
-                "x-scheme-handler/about" = "zen-twilight.desktop";
-                "x-scheme-handler/unknown" = "zen-twilight.desktop";
-                # "text/html" = "zen-twilight.desktop";
+                "x-scheme-handler/http" = "firefox.desktop";
+                "x-scheme-handler/https" = "firefox.desktop";
+                "x-scheme-handler/about" = "firefox.desktop";
+                "x-scheme-handler/unknown" = "firefox.desktop";
+                # "text/html" = "firefox.desktop";
           
                 # Text / code
                 "text/plain" = "nvim.desktop";
@@ -72,7 +72,7 @@
                 "audio/webm" = "mpv.desktop";
           
                 # PDF
-                "application/pdf" = "zen-twilight.desktop";
+                "application/pdf" = "firefox.desktop";
           
                 # Directories
                 "inode/directory" = "yazi.desktop";
