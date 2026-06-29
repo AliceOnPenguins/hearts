@@ -24,24 +24,26 @@ hl.config({
       },
       inactive_border = "rgba(1a1a1aaa)",
     },
-    border_size = 3,
+    border_size = 2,
     allow_tearing = false,
     layout = "scrolling",
   },
 
   decoration = {
     rounding = 9,
-    rounding_power = 3,
+    rounding_power = 4,
     active_opacity = 1.0,
     inactive_opacity = 1.0,
 
-    shadow = {
-      enabled = false,
-      range = 1,
-      render_power = 1,
-      color = 0xf4346bee,
-      color_inactive = 0x000000ee,
-    },
+  shadow = {
+    enabled      = true,
+    range        = 12,
+    render_power = 6,
+    sharp        = false,
+    color        = "rgba(0,0,0,0.19)",
+    offset       = {0, 0},
+    scale        = 1,
+  },
 
     blur = {
       enabled = true,
@@ -50,15 +52,8 @@ hl.config({
       new_optimizations = true,
       size = 3,
       passes = 2,
-      brightness = 1,
-      noise = 0.05,
+      noise = 0.03,
       contrast = 0.89,
-      vibrancy = 0.1,
-      vibrancy_darkness = 0.5,
-      popups = false,
-      popups_ignorealpha = 0.6,
-      input_methods = true,
-      input_methods_ignorealpha = 0.8
     },
   },
 })
