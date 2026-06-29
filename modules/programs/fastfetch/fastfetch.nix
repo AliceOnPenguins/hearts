@@ -6,7 +6,7 @@
              "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
              logo = {
                type = "auto";
-               source = "~/hearts/modules/programs/fastfetch/assets/rhff2.webp";
+               source = "~/hearts/modules/programs/fastfetch/assets/rhff3.webp";
                height = 25;
                width = 40;
                # color = {

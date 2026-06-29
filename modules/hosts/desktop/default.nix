@@ -8,13 +8,6 @@
           programs.anime-game-launcher.enable = true;
         })
 
-
-        # cachy kernel
-        ({ pkgs, ... }: {
-          nixpkgs.overlays = [ inputs.nix-cachyos-kernel.overlays.default ];
-          boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-bore-x86_64-v3;
-        })
-
         self.nixosModules.heartsConfiguration
         self.nixosModules.home-manager
         self.nixosModules.gnome-keyring
@@ -23,7 +16,7 @@
         self.nixosModules.pipewire
         self.nixosModules.networking
         self.nixosModules.time-locale
-        self.nixosModules.bootloader
+        self.nixosModules.boot
         self.nixosModules.usersAlice
         self.nixosModules.systemPackages
         self.nixosModules.consoleSetup
