@@ -42,6 +42,9 @@ in {
   SanitizeOnShutdown = {
     FormData = true;
     Cache = true;
+    History = true;
+    Cookies = false;
+    Sessions = false;
   };
   ExtensionSettings = mkExtensionSettings {
     "uBlock0@raymondhill.net" = mkExtensionEntry {
@@ -65,6 +68,7 @@ in {
     "github-repository-size@pranavmangal" = "gh-repo-size";
     "jid1-BoFifL9Vbdl2zQ@jetpack" = "decentraleyes";
     "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = "vimium";
+    "{73a3fc79-686d-4503-a618-14cc08365804}" = "vesper";
   };
 
   Preferences = mkLockedAttrs {
@@ -78,7 +82,7 @@ in {
     "browser.newtabpage.activity-stream.feeds.topsites" = false;
     "browser.topsites.contile.enabled" = false;
     "browser.translations.enable" = false;
-    "privacy.resistFingerprinting" = true;
+    "privacy.resistFingerprinting" = false;
     "privacy.resistFingerprinting.randomization.canvas.use_siphash" = true;
     "privacy.resistFingerprinting.randomization.daily_reset.enabled" = true;
     "privacy.resistFingerprinting.randomization.daily_reset.private.enabled" = true;
@@ -90,5 +94,13 @@ in {
     "gfx.webrender.all" = true;
     "network.http.http3.enabled" = true;
     "network.socket.ip_addr_any.disabled" = true; # disallow bind to 0.0.0.0
+    "browser.ai.control.default" = "none";
+    "browser.ai.control.linkPreviewKeyPoints" = "none";
+    "browser.ai.control.pdfjsAltText" = "none";
+    "browser.ai.control.sidebarChatbot" = "none";
+    "browser.ai.control.smartTabGroups" = "none";
+    "browser.ai.control.smartWindow" = "none";
+    "browser.ai.control.translations" = "none";
+    "browser.ml.enable" = false;
   };
 }
