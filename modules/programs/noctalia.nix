@@ -18,7 +18,7 @@
 
                 wallpaper = {
                     enabled = true;
-                    default.path = "\~/hearts/wallpapers/i1.jpeg";
+                    default.path = "\~/hearts/wallpapers/illit2.jpeg";
                     directory = "\~/Pictures/";
                   };
 
