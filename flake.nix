@@ -15,12 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # hyprland-scroll-overview = {
-    #   url = "github:yayuuu/hyprland-scroll-overview";
-    #   inputs.hyprland.follows = "hyprland";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     noctalia = {
     	url = "github:noctalia-dev/noctalia";
 	  };
