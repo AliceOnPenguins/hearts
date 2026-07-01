@@ -14,13 +14,13 @@ hl.config({
     col = {
       active_border = {
         colors = {
-          "rgba(f6b26bff)",
-          "rgba(ffe597ff)",
+          "rgba(f2789aff)",
+          "rgba(f5b8cfff)",
           "rgba(ffffffff)",
-          "rgba(86c8ffff)",
-          "rgba(5b96faff)",
+          "rgba(d4b3f0ff)",
+          "rgba(b8d4e8ff)",
         },
-        angle = 90,
+        angle = 45,
       },
       inactive_border = "rgba(1a1a1aaa)",
     },
