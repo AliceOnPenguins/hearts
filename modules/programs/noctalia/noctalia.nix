@@ -7,12 +7,13 @@
 
                 theme = {
                     mode = "dark";
-                    source = "community";
+                    source = "custom";
+                    custom_palette = "yunah";
                     community_palette = "Vesper";
                     builtin = "Kanagawa";
                     templates = {
-                        builtin_ids = [ "btop" "cava" "foot" "gtk3" "gtk4" "kitty" "qt" ];
-                        community_ids = [ "yazi" "discord" ];
+                        builtin_ids = [ "btop" "gtk3" "gtk4" "kitty" "qt" ];
+                        community_ids = [ ];
                       };
                   };
 
@@ -95,10 +96,10 @@
 
                 widget = {
                     workspaces = {
-                        focused_color = "secondary";
-                        empty_color = "on_surface_variant";
+                        focused_color = "error";
+                        empty_color = "outline";
                         minimal = true;
-                        occupied_color = "on_surface_variant";
+                        occupied_color = "outline";
                       };
                   };
               };
