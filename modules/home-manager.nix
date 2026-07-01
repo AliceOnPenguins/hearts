@@ -25,7 +25,6 @@
             qt6Packages.qt6ct
             ncdu
             eza
-            yazi
             tree
             protonplus
             protontricks
