@@ -6,7 +6,7 @@
              "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
              logo = {
                type = "auto";
-               source = "~/hearts/modules/programs/fastfetch/assets/yunah.webp";
+               source = "~/bias/modules/programs/fastfetch/assets/yunah.webp";
                height = 20;
                width = 32;
                padding = {

@@ -1,5 +1,5 @@
 { self, inputs, lib, ... }: {
-    flake.nixosModules.heartsHardware = { pkgs, lib, config, modulesPath, ... }: {
+    flake.nixosModules.biasHardware = { pkgs, lib, config, modulesPath, ... }: {
 
       imports =
         [ (modulesPath + "/installer/scan/not-detected.nix")

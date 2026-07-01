@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-    flake.nixosConfigurations.hearts = inputs.nixpkgs.lib.nixosSystem {
+    flake.nixosConfigurations.bias = inputs.nixpkgs.lib.nixosSystem {
         modules = [
 
         ({ ... }: {
@@ -8,7 +8,7 @@
           programs.anime-game-launcher.enable = true;
         })
 
-        self.nixosModules.heartsConfiguration
+        self.nixosModules.biasConfiguration
         self.nixosModules.home-manager
         self.nixosModules.gnome-keyring
         self.nixosModules.defaultShell

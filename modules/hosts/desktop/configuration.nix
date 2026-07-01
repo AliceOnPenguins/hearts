@@ -1,7 +1,7 @@
 { self, inputs, ... }: {
-    flake.nixosModules.heartsConfiguration = { pkgs, lib, ... }: {
+    flake.nixosModules.biasConfiguration = { pkgs, lib, ... }: {
         imports = [
-        self.nixosModules.heartsHardware
+        self.nixosModules.biasHardware
         ];
 
          nix.settings = {
