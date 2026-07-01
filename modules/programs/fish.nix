@@ -13,6 +13,7 @@
         };
         interactiveShellInit = ''
           set fish_greeting
+          fastfetch
         '';
       };
 
